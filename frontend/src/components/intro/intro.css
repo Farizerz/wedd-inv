@@ -1,0 +1,21 @@
+.intro {
+    height: 100vh;
+    display: flex;
+}
+
+.intro-bg {
+    
+}
+
+.intro-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    pointer-events: none;  
+}
+
+.intro-title {
+   position: absolute; 
+   margin: 50%;
+}
