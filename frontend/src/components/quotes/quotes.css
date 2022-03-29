@@ -1,7 +1,6 @@
 .quotes {
     height: 100vh;
     display: flex;
-    justify-content: center;
 }
 
 .quotes-bg {
@@ -9,20 +8,114 @@
     height: 100%;
     width: 100%;
     position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .quotes-wrapper {
+    flex: 1;
     position: absolute;
+    width: 45%; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .quotes-flower {
     pointer-events: none;
-    padding-top: 40px;
-    height: 125px;
+    height: 95px;
+    margin-top: 30px;
+    position: absolute;
+
 }
 
-@media screen and (max-width: 480px) {
+.quotes-prayer {
+    margin-top: 150px;
+    color: beige;
+}
+
+.quotes-verse {
+    margin-top: 20px;
+    color: beige;
+    font-weight: bold;
+}
+
+.quotes-satu {
+    position: absolute;
+    margin: 15%;
+}
+
+.quotes-gambarSatu {
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+@media screen and (max-width: 960px) {
+    .quotes-bg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    .quotes-wrapper {
+        position: absolute;
+        text-align: justify;
+        text-align-last: center;
+        width: 75%;  
+    }
+
     .quotes-flower {
         height: 45px;
     }
+
+    .quotes-satu {
+        position: absolute;
+        margin: 30%;
+        align-items: center;
+    }
+
+    .quotes-gambarSatu {
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+        width: 600px;
+        height: 260px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .quotes-bg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .quotes-wrapper {
+        position: absolute;
+        text-align: justify;
+        text-align-last: center;
+        width: 75%;  
+    }
+
+    .quotes-flower {
+        height: 45px;
+    }
+
+    .quotes-satu {
+        position: absolute;
+        margin: 80%;
+        align-items: center;
+    }
+
+    .quotes-gambarSatu {
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+        width: 300px;
+        height: 260px;
+    }
+
 }

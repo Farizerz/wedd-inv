@@ -10,23 +10,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
 }
 
 .intro-bg-img {
-    flex: 1;
     width: 100%;
-    height: 120%;
-    object-fit: cover;
+    height: 100vh;
     position: absolute;
-    pointer-events: none;  
+    object-fit: cover;
+    top:0;
 }
 
 .intro-title {
-   position: absolute; 
-   top: 75%;
-   color: azure;
-   text-align: center;
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    color: beige;
 }
 
 .intro-title-subject {
@@ -44,20 +42,18 @@
     font-size: 15px;
 }
 
-.intro-bg-opacity {
+.intro-bg-overlay {
     width: 100%;
-    height: 120%;
+    height: 100vh;
     object-fit: cover;
     position: absolute;
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.5;
+    top: 0;
 }
 
 @media screen and (max-width: 480px) {
     .intro-title {
-        top: 70%;
-        align-items: center;
-        justify-content: center;
 
     }
 }
