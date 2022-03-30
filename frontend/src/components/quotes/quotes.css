@@ -1,121 +1,180 @@
 .quotes {
-    height: 100vh;
-    display: flex;
+
 }
 
 .quotes-bg {
     background-color: rgb(165, 142, 107);
     height: 100%;
     width: 100%;
-    position: absolute;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .quotes-wrapper {
-    flex: 1;
-    position: absolute;
-    width: 45%; 
-    justify-content: center;
-    align-items: center;
+    width: 53%; 
     text-align: center;
 }
 
 .quotes-flower {
-    pointer-events: none;
-    height: 95px;
-    margin-top: 30px;
-    position: absolute;
-
+    max-width: 95px;
+    position: relative;
+    margin: 30px;
 }
 
 .quotes-prayer {
-    margin-top: 150px;
     color: beige;
+    font-weight: 470;
+    font-size: 15px;
 }
 
 .quotes-verse {
-    margin-top: 20px;
     color: beige;
     font-weight: bold;
+    margin: 30px;
+    padding-bottom: 30px;
 }
 
 .quotes-satu {
-    position: absolute;
-    margin: 15%;
+    width: 70%;
+}
+
+.quotes-dua {
+    width: 70%;
 }
 
 .quotes-gambarSatu {
+    pointer-events: none;
     border-top-left-radius: 3%;
     border-top-right-radius: 3%;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.quotes-gambarDua {
+    pointer-events: none;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+.quotes-poemSatu{
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    width: 75%;
+    background-color: white;
+    height: auto;
+    position: relative;
+    text-align: center;
+    bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.quotes-poemDua{
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    width: 75%;
+    background-color: white;
+    height: auto;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.quotes-poemTitle{
+    font-family: "Sacramento", cursive;
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 50;
+    color: rgb(99, 99, 99);
+}
+
+.quotes-poem {
+    font-weight: bold;
+    font-size: 14.5px; 
+    padding: 30px;
+    color: rgb(77, 77, 77);
+    font-family: "Open Sans", cursive;
+}
+
+.quotes-poemDots {
+    pointer-events: none;
+    font-size: 12px;
+}
+
+.quotes-heartImg{
+    margin: 30px;
+    width: 30px;
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
 
 @media screen and (max-width: 960px) {
     .quotes-bg {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        display: flex;
-        justify-content: center;
+
     }
 
     .quotes-wrapper {
-        position: absolute;
+        width: 75%; 
         text-align: justify;
         text-align-last: center;
-        width: 75%;  
     }
 
     .quotes-flower {
-        height: 45px;
+        max-width: 95px;
     }
 
-    .quotes-satu {
-        position: absolute;
-        margin: 30%;
-        align-items: center;
+    .quotes-poemDots {
+        content: "● ● ● ●";
     }
-
-    .quotes-gambarSatu {
-        border-top-left-radius: 3%;
-        border-top-right-radius: 3%;
-        width: 600px;
-        height: 260px;
-    }
-
 }
 
 @media screen and (max-width: 480px) {
     .quotes-bg {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        display: flex;
-        justify-content: center;
+
     }
     
     .quotes-wrapper {
-        position: absolute;
-        text-align: justify;
-        text-align-last: center;
-        width: 75%;  
+
     }
 
     .quotes-flower {
-        height: 45px;
+        max-width: 45px;
     }
 
+
     .quotes-satu {
-        position: absolute;
-        margin: 80%;
-        align-items: center;
+        width: 60%;
     }
 
     .quotes-gambarSatu {
-        border-top-left-radius: 3%;
-        border-top-right-radius: 3%;
-        width: 300px;
-        height: 260px;
+        object-fit: cover;
+        width: 100%;
+        height: 25vh;
     }
 
+    .quotes-dua {
+        width: 60%;
+    }
+
+    .quotes-gambarDua {
+        object-fit: cover;
+        width: 100%;
+        height: 25vh;
+    }    
 }
