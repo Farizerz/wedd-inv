@@ -17,6 +17,7 @@
 }
 
 .quotes-flower {
+    pointer-events: none;
     max-width: 95px;
     position: relative;
     margin: 30px;
@@ -107,6 +108,7 @@
 }
 
 .quotes-heartImg{
+    pointer-events: none;
     margin: 30px;
     width: 30px;
     animation: zoom-in-zoom-out 1s ease infinite;
