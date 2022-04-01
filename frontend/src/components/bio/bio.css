@@ -41,6 +41,14 @@
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .bio-triangleHeader {
+        height: 70px;
+    }
+
+    .bio-triangleFooter {
+        height: 70px;
+    }   
 }
 
 @media screen and (max-width: 480px) {
@@ -48,4 +56,13 @@
         flex-direction: column;
         justify-content: space-around;
     }
+    
+    .bio-triangleHeader {
+        height: 70px;
+    }
+
+    .bio-triangleFooter {
+        height: 70px;
+    }   
+
 }

@@ -3,20 +3,21 @@ import './bioCard.css';
 import PP from '../../img/PP1-254.png';
 import { FaInstagram as Instagram } from 'react-icons/fa'
 
-const BioCard = () => {
+const BioCard = ({id, img, nama, anak, ayah, ibu, link}) => {
   return (
     <div className='bioCard'>
         
         <div className='bioCard-container'>
             {/* isi container */}
             <div className='bioCard-contents'>
-                <img className='bioCard-img' src={PP} />
-                <p className='bioCard-name'>Denny Ammari Ramadhan Nasution, S.E</p>
-                <p className='bioCard-childOf'>Putra Pertama dari</p>
-                <p className='bioCard-parents'>Bpk. Ade Parlaungan Nasution, S.E., M.Si., Ph.D. <br /> & Ibu Eva Dewi Melinda Nasution, A.Md. Keb (Almh)</p>
-                <form action='https://www.instagram.com/dennyammary/' target='_blank'>
-                  <button type='submit'>
-                    <Instagram />
+                <img className='bioCard-img' src={img} />
+                <p className='bioCard-name'>{nama}</p>
+                <p className='bioCard-childOf'>{anak}</p>
+                <p className='bioCard-parents'>{ayah}</p>
+                <p className='bioCard-parents'>{ibu}</p>
+                <form action={link} target='_blank'>
+                  <button type='submit' className='bioCard-button'>
+                    <Instagram className='bioCard-icon' />
                   </button>
                 </form>
             </div>
