@@ -34,31 +34,44 @@
     display: flex;
     flex-direction: row;
     position: absolute;
+    z-index: -1;
 }
 
 .bioCard-contents {
     display: flex;
-    width: 50%;
+    width: 40%;
     height: auto;
     word-break: normal;
     align-items: center;
-    justify-content: center;
     text-align: center;
     flex-direction: column;
     position: absolute;
     flex: 1;
+    margin-left: 100px;
 }
 
 .bioCard-img {
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
 .bioCard-name {
-    font-size: 55px;
+    font-size: 47px;
     font-family: 'Noto Serif Display', serif;
-    font-weight: 570;
+    font-weight: bold;
     color: rgb(165, 142, 107);;
+}
+
+.bioCard-childOf {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+}
+
+.bioCard-parents {
+    font-size: 17px;
+    color: rgb(100, 100, 100);
+    font-weight: 600;
 }
 
 
