@@ -88,6 +88,38 @@
     padding: 5px;
 }
 
+@media screen and (max-width: 1280px) {
+    .bioCard-container {
+        position: relative;
+    }
+    
+    .bioCard-contents {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .bioCard-container {
+        position: relative;
+    }
+
+    .bioCard-contents {
+        width: 70%;
+    }
+
+    .bioCard-name {
+        font-size: 26.5px;
+    }
+
+    .bioCard-childOf {
+        font-size: 15px;
+    }
+
+    .bioCard-parents {
+        font-size: 14px;
+    } 
+}
 
 @media screen and (max-width: 960px) {
     .bioCard {
@@ -114,6 +146,26 @@
 
     .bioCard-img {
         width: 75%;
+        height: auto;
+    }
+
+    .bioCard-name {
+        font-size: 26.5px;
+    }
+
+    .bioCard-childOf {
+        font-size: 15px;
+    }
+
+    .bioCard-parents {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 720px) {
+
+    .bioCard-img {
+        width: 65%;
         height: auto;
     }
 
@@ -164,6 +216,25 @@
 
     .bioCard-parents {
         font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .bioCard-container2 {
+        height: 45vh;
+    }  
+}
+
+@media screen and (max-width: 320px) {
+    .bioCard-container {
+        position: relative;
+        right: 18%;
+    }
+
+    .bioCard-container2 {
+        width: 90%;
+        height: 50vh;
     }
 
 }

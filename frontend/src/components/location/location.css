@@ -1,0 +1,6 @@
+.location {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap;
+}

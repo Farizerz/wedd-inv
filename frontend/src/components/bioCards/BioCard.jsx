@@ -6,9 +6,9 @@ import { FaInstagram as Instagram } from 'react-icons/fa'
 const BioCard = ({id, img, nama, anak, ayah, ibu, link}) => {
   return (
     <div className='bioCard'>
-        
+      
+        {/* isi container */}
         <div className='bioCard-container'>
-            {/* isi container */}
             <div className='bioCard-contents'>
                 <img className='bioCard-img' src={img} />
                 <p className='bioCard-name'>{nama}</p>
