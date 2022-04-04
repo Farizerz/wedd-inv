@@ -119,6 +119,7 @@
     .bioCard-parents {
         font-size: 14px;
     } 
+
 }
 
 @media screen and (max-width: 960px) {
@@ -134,7 +135,7 @@
 
     .bioCard-container2 {
         width: 50%;
-        height: 100vh;
+        height: 50vh;
         display: flex;
         flex-direction: row;
         position: absolute;

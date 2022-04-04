@@ -1,6 +1,126 @@
 .location {
-    position: absolute;
-    flex-direction: column;
+    height: 100%;
     display: flex;
-    flex-wrap: nowrap;
+}
+
+.location-bg {
+    background-color: rgb(165, 142, 107);
+    height: 100%;
+    width: 100%;
+}
+
+.location-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.location-photo {
+    width: 60%;
+}
+
+.location-img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.location-details {
+    width: 60%;
+    height: auto;
+    background-color: white;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.location-akad {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.location-resepsi {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.location-title {
+    margin-top: 20px;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(165, 142, 107);
+}
+
+.location-subtitle {
+    margin: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+}
+
+.location-address {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(165, 142, 107);   
+}
+
+.location-town {
+    margin: 10px;
+    line-height: 22px;
+    font-weight: 500;
+    color: rgb(100, 100, 100);  
+}
+
+.location-emptyspace {
+    width: 130px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.location-button {
+    cursor: pointer;
+    background-color: rgb(183, 141, 64);
+    border: 0;
+    width: 130px;
+    height: 30px;
+    color: beige;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.location-icon {
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+
+@media screen and (max-width: 480px) {
+    .location-emptyspace {
+        display: none;
+    }
+
+    .location-photo {
+        width: 80%;
+    }
+
+    .location-details {
+        width: 80%;
+        flex-direction: column;
+    }
 }
