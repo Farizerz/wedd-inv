@@ -159,6 +159,10 @@
         max-width: 45px;
     }
 
+    .quotes-poemDots span {
+        display: none;
+    }
+
 
     .quotes-satu {
         width: 60%;

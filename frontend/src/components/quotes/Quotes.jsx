@@ -27,7 +27,7 @@ const Quotes = () => {
           {/* Ini untuk poem pertama */}
           <div className='quotes-poemSatu'>
             <p className='quotes-poemTitle'>We Found Love</p>
-            <p className='quotes-poemDots'>● ● ● ● ● ● ● ● ●</p>
+            <p className='quotes-poemDots'>● ● ●<span> ● ● ● ● ● ●</span></p>
             <p className='quotes-poem'>“You don’t love someone for their looks, or their clothes or their fancy car, but because they sing a song only you can hear.”</p>
           </div>
 
@@ -39,7 +39,7 @@ const Quotes = () => {
           {/* Ini untuk poem kedua */}
           <div className='quotes-poemDua'>
             <p className='quotes-poemTitle'>One Love</p>
-            <p className='quotes-poemDots'>● ● ● ● ● ● ● ● ●</p>
+            <p className='quotes-poemDots'>● ● ●<span> ● ● ● ● ● ●</span></p>
             <p className='quotes-poem'>“Happy marriages begin when we marry the ones we love, and they blossom when we love the ones we marry.”</p>
           </div>
 

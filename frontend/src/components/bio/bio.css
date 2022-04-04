@@ -1,68 +1,32 @@
 .bio {
-    height: 100vh;
+    height: auto;
     display: flex;
+}
+
+.bio-list {
+    align-items: center;
     justify-content: center;
+    display: flex;
+    flex: 1;
     flex-wrap: wrap;
 }
 
-.bio-triangleHeader {
+.bio-triangleHeader{
     clip-path: polygon(50% 50%, 0 0, 100% 0);
     width: 100%;
     height: auto;
     background-color: rgb(165, 142, 107);
     position:relative;
     bottom: 2px;
+    padding: 30px;
 }
 
-.bio-triangleFooter {
+.bio-triangleFooter{
     clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
     width: 100%;
     height: auto;
     background-color: rgb(165, 142, 107);
     position: relative;
     bottom: 10;
-}
-
-.bio-list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-@media screen and (max-width: 960px) {
-    .bio {
-        height: 50vh;
-    }
-
-    .bio-list {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .bio-triangleHeader {
-        height: 70px;
-    }
-
-    .bio-triangleFooter {
-        height: 70px;
-    }   
-}
-
-@media screen and (max-width: 480px) {
-    .bio-list {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    
-    .bio-triangleHeader {
-        height: 70px;
-    }
-
-    .bio-triangleFooter {
-        height: 70px;
-    }   
-
+    padding: 30px;    
 }

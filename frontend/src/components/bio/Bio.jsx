@@ -7,10 +7,12 @@ const Bio = () => {
   return (
     <div className='bio'>
         {/* Header Triangle */}
-        <div className='bio-triangleHeader'></div>
+        
 
         {/*ini bio list */}
         <div className='bio-list'>
+
+          <div className='bio-triangleHeader'>asdasd</div>
           {couple.map((item) => (
             <BioCard 
               key={item.id} 
@@ -20,12 +22,13 @@ const Bio = () => {
               ayah={item.ayah}
               ibu={item.ibu}
               link={item.link}
+              className='bio-bioCard'
             />
           ))}
+          {/* Footer Triangle */}
+          <div className='bio-triangleFooter'>asdasd</div>
         </div>    
 
-        {/* Footer Triangle */}
-        <div className='bio-triangleFooter'></div>
     </div>
   )
 }
