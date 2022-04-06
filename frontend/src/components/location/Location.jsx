@@ -17,7 +17,7 @@ const Location = () => {
           <div className='location-details'>
             <div className='location-akad'>
               <p className='location-title'>Akad Nikah</p>
-              <p className='location-subtitle'>Sabtu, 6 November 2021</p>
+              <p className='location-subtitle'>Sabtu, 28 Mei 2022</p>
               <p className='location-subtitle'>09.00 s/d 10.00 WIB</p>
               <p className='location-address'>Gedung Convention Center Universitas Panca Bhakti (UPB)</p>
               <p className='location-subtitle'>Jalan Kom Yos Sudarso, Pontianak,<br />
@@ -30,7 +30,7 @@ const Location = () => {
               
             <div className='location-resepsi'>
               <p className='location-title'>Resepsi</p>
-              <p className='location-subtitle'>Sabtu, 6 November 2021</p>
+              <p className='location-subtitle'>Sabtu, 28 Mei 2022</p>
               <p className='location-subtitle'>Sesi I: 13.30 s/d 15.30 WIB<br />
                                                Sesi II: 15.30 s/d 17.30 WIB
               </p>
