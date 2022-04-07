@@ -1,0 +1,158 @@
+.rsvp {
+    height: auto;
+    display: flex;
+}
+
+.rsvp-bg {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.rsvp-titleContainer {
+    width: 40%;
+    justify-content: center;
+    position: relative;
+}
+
+
+.rsvp-title {
+    margin-top: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+}
+
+.rsvp-ucapan {
+    margin-top: 4px;
+    word-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+    font-size: 16.5px;
+    color: rgb(120, 120, 120);
+    font-family : 'Calibri', Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+.rsvp-formContainer {
+    width: 74%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.rsvp-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    border-radius: 5px;
+    font-size: 17px;
+    outline:none;
+    margin-bottom: 20px;
+    color: rgb(100, 100, 100);
+    background-color: white;
+}
+
+.rsvp-input:focus {
+    border: 1px solid skyblue;
+}
+
+#dropdown {
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+
+.rsvp-button {
+    width: 65px;
+    height: 35px;
+    background-color: rgb(150, 150, 150);
+    border: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.rsvp-button:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.rsvp-donations {
+    position: relative;
+    margin-top: 50px;
+    width: 40%;
+    z-index: -2;
+}
+
+.rsvp-icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+}
+
+.rsvp-donationTitle {
+    font-family: 'Sacramento', cursive;
+    font-size: 32px;
+    color: rgb(51, 51, 51);
+}
+
+#subtitle {
+    color: rgb(100, 100, 100);
+}
+
+.rsvp-donationButton {
+    margin-top: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(135, 102, 61);
+    cursor: pointer;
+}
+
+.rsvp-donationIcon {
+    font-size: 35px;
+    color: white;   
+}
+
+.rsvp-footer {
+    clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+    width: 100%;
+    height: auto;
+    background-color: rgb(165, 142, 107);
+    position: relative;
+    bottom: -1px;
+    padding: 30px;    
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .rsvp-titleContainer {
+        width: 74%;
+    }
+
+    .rsvp-ucapan {
+        font-size: 13.5px;
+        margin-bottom: 10px;
+    }
+
+    .rsvp-formContainer {
+        width: 74%;
+        margin-top: 30px;
+    }
+
+    .rsvp-input {
+        width: 90%;
+    }
+
+    .rsvp-donations {
+        width: 80%;
+    }
+}

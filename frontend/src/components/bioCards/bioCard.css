@@ -53,6 +53,7 @@
 .bioCard-img {
     width: 60%;
     height: auto;
+    pointer-events: none;
 }
 
 .bioCard-name {
