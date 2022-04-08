@@ -14,7 +14,7 @@ const ModelRSVP = {
             db.query(`INSERT INTO rsvp
                         (nama, alamat, status) 
                         VALUES 
-                        ("${data.nama}", "${data.alamat}, "${data.status}")`, callback);
+                        ("${data.nama}", "${data.alamat}", "${data.status}")`, callback);
         } catch (err) {
             console.error(err.message);
         }

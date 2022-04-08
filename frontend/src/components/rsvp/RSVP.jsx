@@ -5,6 +5,7 @@ import { IoWalletSharp as Wallet } from 'react-icons/io5';
 import axios from 'axios';
 
 const RSVP = () => {
+    
     const [nama, setNama] = useState();
     const [alamat, setAlamat] = useState();
     const [status, setStatus] = useState();
@@ -24,15 +25,6 @@ const RSVP = () => {
         window.location = "/";
     }
 
-    const telor = async () => {
-            const response = await axios.get(`http://localhost:5000/`);
-            const jsonData = await response.data;
-            console.table(jsonData);
-    }
-
-    useEffect(() => {
-        telor();
-    } ,[]);
 
   return (
     <div className='rsvp'>
@@ -47,8 +39,8 @@ const RSVP = () => {
                     <input type='text' className='rsvp-input' placeholder='Alamat' value={alamat} onChange={e => setAlamat(e.target.value)} required></input>
                     <select className='rsvp-input' id='dropdown' value={status} onChange={e => setStatus(e.target.value)} required>
                         <option value="">Apakah Anda akan hadir?</option>
-                        <option value="ya">Ya, Tentu!</option>
-                        <option value="tidak">Maaf, tidak bisa.</option>
+                        <option value="Ya, Tentu!">Ya, Tentu!</option>
+                        <option value="Maaf, tidak bisa.">Maaf, tidak bisa.</option>
                     </select>
                     <button type='submit' className='rsvp-button'>Kirim</button>
                 </form>

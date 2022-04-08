@@ -16,7 +16,7 @@ const ModelGB = {
                         VALUES 
                         ("${data.nama}", "${data.komentar}")`, callback);
         } catch (err) {
-            console.error(err.message);
+            console.error("Error dari model: " + err.message);
         }
     }
 }
