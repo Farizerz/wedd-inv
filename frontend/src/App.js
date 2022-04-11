@@ -7,6 +7,7 @@ import RSVP from "./components/rsvp/RSVP.jsx";
 import Protocol from "./components/protocol/Protocol.jsx";
 import Slideshow from "./components/slideshow/Slideshow.jsx";
 import Guestbook from "./components/guestbook/Guestbook.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Protocol />
       <Slideshow />
       <Guestbook />
+      <Footer />
     </div>
   );
 }
