@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './guestbook.css';
 import { FaComments as Comment } from 'react-icons/fa';
 import axios from 'axios';
@@ -7,6 +7,8 @@ const Guestbook = () => {
   const [message, setMessage] = useState([]);
   const [nama, setNama] = useState();
   const [komentar, setKomentar] = useState();
+
+  const myRef = useRef();
 
 
   useEffect(() => {
@@ -29,18 +31,23 @@ const Guestbook = () => {
     } catch (err) {
       console.error(err.message);
     }
-    window.location = "/";
-    scrollToBottom();
+    selectMessage();
+    window.alert("Success sending message!");
+    scrollToComment();
   }
 
-  const scrollToBottom = () => {
-    var body = document.body,
-    html = document.documentElement;
-  
-    var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+  const scrollToComment = () => {
+    const scrollToComment = document.getElementById("message");
     window.scrollTo({
-      top: height,
+      top: scrollToComment.offsetTop,
+      behavior: 'smooth'
+    });
+  }
+
+  const scrollToForm = () => {
+    const scrollBottom = document.getElementById("sendMessage");
+    window.scrollTo({
+      top: scrollBottom.offsetTop,
       behavior: 'smooth'
     });
   }
@@ -49,10 +56,10 @@ const Guestbook = () => {
     <div className='guestbook'>
       <div className='guestbook-bg'>
         { /* intro */ }
-          <div className='guestbook-intro'>
+          <div className='guestbook-intro' id="message">
             <p className='guestbook-title'>Guestbook</p>
             <p className='guestbook-subtitle'>Leave a Message / Wishes for us...</p>
-            <button className='guestbook-button' onClick={scrollToBottom}><Comment /> Write your wish...</button>
+            <button className='guestbook-button' onClick={scrollToForm} ><Comment /> Write your wish...</button>
             <div className='guestbook-dash'></div>
           </div>
 
@@ -69,7 +76,7 @@ const Guestbook = () => {
           </div>
 
         { /* Send a message */ }
-        <div className='guestbook-sendMessage'>
+        <div className='guestbook-sendMessage' id="sendMessage">
           <form onSubmit={ sendMessage }>
             <input 
               type="text" 

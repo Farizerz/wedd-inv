@@ -22,7 +22,7 @@ const RSVP = () => {
         } catch (err) {
             console.error(err.message);
         }
-        window.location = "/";
+        window.alert("Success!");
     }
 
 
