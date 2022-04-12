@@ -1,5 +1,6 @@
 .quotes {
-
+    height: 100%;
+    display: flex;
 }
 
 .quotes-bg {
@@ -8,12 +9,14 @@
     width: 100%;
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
 }
 
 .quotes-wrapper {
     width: 53%; 
     text-align: center;
+    align-items: center;
 }
 
 .quotes-flower {

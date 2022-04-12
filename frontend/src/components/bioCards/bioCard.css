@@ -136,11 +136,7 @@
 
     .bioCard-container2 {
         width: 50%;
-<<<<<<< HEAD
         height: 45vh;
-=======
-        height: 50vh;
->>>>>>> b08687105dc5b9eae2cd696f7705c02eb461b701
         display: flex;
         flex-direction: row;
         position: absolute;
