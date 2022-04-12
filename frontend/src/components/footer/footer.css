@@ -1,0 +1,31 @@
+.footer {
+    height: 20vh;
+    display: flex;
+}
+
+.footer-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-triangleHeader{
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    width: 100%;
+    height: auto;
+    background-color: rgb(165, 142, 107);
+    position:relative;
+    bottom: 20px;
+    padding: 30px;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+    position: relative;
+    bottom: 30px;
+}

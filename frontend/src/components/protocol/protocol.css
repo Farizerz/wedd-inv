@@ -1,0 +1,159 @@
+.protocol {
+    height: 100%;
+    display: flex;
+}
+
+.protocol-bg {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(165, 142, 107);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.protocol-title {
+    margin: 20px;
+    font-size: 25px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+    color: whitesmoke;
+
+}
+
+.protocol-container {
+    width: 30%;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+}
+
+.protocol-card {
+    width: 30%;
+    height: auto;
+    margin: 20px 30px -10px 20px;
+}
+
+.protocol-img {
+    width: 65%;
+    height: auto;
+    pointer-events: none;
+}
+
+.protocol-details {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(100, 100, 100);
+    line-height: 25px;
+}
+
+@media screen and (max-width: 980px) {
+    .protocol {
+        height: 100%;
+    }
+
+    .protocol-container {
+        width: 80%;
+    }
+
+    .protocol-img {
+        width: 40%;
+    }
+
+    .protocol-card {
+        width: 30%;
+        height: auto;
+        margin: 30px 60px 20px 60px;
+    }
+    .protocol-details {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .protocol {
+        height: 100%;
+    }
+
+    .protocol-container {
+        width: 72%;
+    }
+
+    .protocol-img {
+        width: 80%;
+    }
+
+    .protocol-card {
+        width: 30%;
+        height: auto;
+        margin: 20px 20px 0px 30px;
+    }
+
+    .protocol-details{
+        font-size: 11.5px;
+        word-spacing: -1.7px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .protocol {
+        height: 100%;
+    }
+
+    .protocol-container {
+        width: 72%;
+    }
+
+    .protocol-img {
+        width: 80%;
+    }
+
+    .protocol-card {
+        width: 30%;
+        height: auto;
+        margin: 20px 20px 0px 30px;
+    }
+
+    .protocol-details{
+        font-size: 11.5px;
+        word-spacing: -1.7px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .protocol {
+        height: 100%;
+    }
+
+    .protocol-container {
+        width: 72%;
+    }
+
+    .protocol-img {
+        width: 80%;
+    }
+
+    .protocol-card {
+        width: 20%;
+        height: auto;
+        margin: 20px 30px 0px 30px;
+    }
+
+    .protocol-details{
+        text-align: center;
+        font-size: 9px;
+        word-spacing: -1.7px;
+        line-height: 20px;
+    }
+}

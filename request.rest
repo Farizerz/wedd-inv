@@ -1,0 +1,19 @@
+###
+GET http://localhost:5000/rsvp/
+Content-Type: application/json
+
+{
+    "nama": "Fariz",
+    "alamat": "Tiban",
+    "status": "Ya"
+}
+
+###
+POST http://localhost:5000/rsvp/post
+Content-Type: application/json
+
+{
+    "nama": "Fariz",
+    "alamat": "Tiban",
+    "status": "Ya"
+}

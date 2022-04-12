@@ -3,7 +3,7 @@ import db from '../config/db.js';
 const ModelGB = {
     selectGuestbook(data, callback) {
         try {
-            db.query(`SELECT * FROM guestbook`, callback);
+            db.query(`SELECT * FROM guestbook ORDER BY id desc`, callback);
         } catch (err) {
             console.error(err.message);
         }
@@ -16,7 +16,7 @@ const ModelGB = {
                         VALUES 
                         ("${data.nama}", "${data.komentar}")`, callback);
         } catch (err) {
-            console.error(err.message);
+            console.error("Error dari model: " + err.message);
         }
     }
 }
