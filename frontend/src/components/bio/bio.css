@@ -15,7 +15,7 @@
     clip-path: polygon(50% 50%, 0 0, 100% 0);
     width: 100%;
     height: auto;
-    
+    background-color: rgb(165, 142, 107);
     position:relative;
     bottom: 2px;
     padding: 30px;
