@@ -68,6 +68,7 @@
 .guestbook-comment {
     color: white;
     margin-bottom: 20px;
+    white-space: pre-line;
 }
 
 .guestbook-sendMessage {

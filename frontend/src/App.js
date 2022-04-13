@@ -8,10 +8,27 @@ import Protocol from "./components/protocol/Protocol.jsx";
 import Slideshow from "./components/slideshow/Slideshow.jsx";
 import Guestbook from "./components/guestbook/Guestbook.jsx";
 import Footer from "./components/footer/Footer.jsx";
-
+import { useState, useEffect } from 'react';
+import './app.css';
+ 
 function App() {
+
+  const preloader = () => {
+    var loader = document.getElementById('preloader');
+
+    window.addEventListener('load', () => {
+      loader.style.display = 'none';
+    });
+  }
+
+  useEffect(() => {
+    preloader();
+  }, [])
+
+  
   return (
     <div>
+      <div id='preloader'></div>
       <Intro />
       <Quotes />
       <Bio />
@@ -24,6 +41,7 @@ function App() {
       <Footer />
     </div>
   );
+
 }
 
 export default App;

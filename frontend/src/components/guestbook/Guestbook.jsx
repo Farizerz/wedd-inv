@@ -31,6 +31,12 @@ const Guestbook = () => {
     } catch (err) {
       console.error(err.message);
     }
+        //empty input field
+        const input = document.querySelectorAll('#inputName, #inputComment');
+        input.forEach(input => {
+          input.value = '';
+        });
+
     selectMessage();
     window.alert("Success sending message!");
     scrollToComment();
@@ -68,8 +74,8 @@ const Guestbook = () => {
             {
               message.map((comments) => (
                 <div key = {comments.id}>
-                  <p className='guestbook-name'>{comments.nama}</p>
-                  <p className='guestbook-comment'>{comments.komentar}</p>
+                  <p className='guestbook-name' id='inputName'>{comments.nama}</p>
+                  <p className='guestbook-comment' id='inputComment'>{comments.komentar}</p>
                 </div>
               ))
             }
