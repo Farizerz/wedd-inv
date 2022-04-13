@@ -45,10 +45,10 @@
 
 .intro-bg-overlay {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     position: absolute;
-    background-color: black;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
     opacity: 0.5;
     top: 0;
 }
