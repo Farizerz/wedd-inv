@@ -47,7 +47,23 @@
     flex-direction: column;
     position: absolute;
     flex: 1;
-    margin-left: 100px;
+    margin-left: 150px;
+    opacity: 0;
+}
+
+.bioCard-contents.active {
+    animation: slide-left 1s ease normal forwards;
+}
+
+@keyframes slide-left {
+    0% {
+        margin-left: 150px;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 100px;
+        opacity: 1;
+    }    
 }
 
 .bioCard-img {

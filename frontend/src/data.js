@@ -3,7 +3,7 @@ import groom from './img/PP1-254.png';
 
 export const couple = [
     {
-        id: 1,
+        id: "satu",
         img: bride,
         nama: "Ajeng Handayani Purwaningrum, B.Ec (Hons)., M.B.A.",
         anak: "Putri Pertama dari",
@@ -12,7 +12,7 @@ export const couple = [
         link: "https://www.instagram.com/ajenghandayaniip/"
     },
     {
-        id: 2,
+        id: "dua",
         img: groom,
         nama: "Denny Ammari Ramadhan Nasution, S.E",
         anak: "Putra Pertama dari",

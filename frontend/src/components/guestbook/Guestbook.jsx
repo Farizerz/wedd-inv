@@ -16,7 +16,7 @@ const Guestbook = () => {
   }, []);
 
   const selectMessage = async () => {
-    const response = await axios.get(`http://192.168.204.1:5000/`);
+    const response = await axios.get(`http://localhost:5000/`);
     const jsonData = await response.data;
     setMessage(jsonData);
   }
@@ -24,7 +24,7 @@ const Guestbook = () => {
   const sendMessage = async e => {
     e.preventDefault();
     try {
-      await axios.post(`http://192.168.204.1:5000/guestbook/post`, {
+      await axios.post(`http://localhost:5000/guestbook/post`, {
         nama: nama,
         komentar: komentar
       });

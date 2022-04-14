@@ -13,10 +13,13 @@
     flex-direction: column;
 }
 
-.quotes-wrapper {
+.quotes-wrapper  {
     width: 53%; 
     text-align: center;
     align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 .quotes-flower {
@@ -24,12 +27,24 @@
     max-width: 95px;
     position: relative;
     margin: 30px;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.quotes-flower.active {
+    animation: zoom ease 1s normal forwards;
 }
 
 .quotes-prayer {
     color: beige;
     font-weight: 470;
     font-size: 15px;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.quotes-prayer.active {
+    animation: zoom ease 1s normal forwards;
 }
 
 .quotes-verse {
@@ -37,15 +52,70 @@
     font-weight: bold;
     margin: 30px;
     padding-bottom: 30px;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.quotes-verse.active {
+    animation: zoom ease 1s normal forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .quotes-satu {
     width: 70%;
+    position: relative;
+    top: 225px;
+    opacity: 0;
+}
+
+
+.quotes-satu.active {
+    animation: naik-keatas 2s ease normal forwards;
+}
+
+@keyframes naik-keatas {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-225px);
+        opacity: 1;
+    }
 }
 
 .quotes-dua {
     width: 70%;
+    bottom: 180px;
+    position: relative;
+    z-index: 0;
+    opacity: 0;
 }
+
+.quotes-dua.active {
+    animation: turun-kebawah ease 2s normal forwards;
+}
+@keyframes turun-kebawah {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(180px);
+        opacity: 1;
+    }
+}
+
 
 .quotes-gambarSatu {
     pointer-events: none;
@@ -85,6 +155,7 @@
     background-color: white;
     height: auto;
     position: relative;
+    z-index: 1;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -95,6 +166,24 @@
     padding-top: 20px;
     font-weight: 50;
     color: rgb(99, 99, 99);
+    position: relative;
+    right: 50px;
+    opacity: 0;
+}
+
+.quotes-poemTitle.active {
+    animation: gerak-kanan ease 2s normal forwards;
+}
+
+@keyframes gerak-kanan {
+    0% {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(50px);
+        opacity: 1;
+    }
 }
 
 .quotes-poem {
@@ -103,6 +192,24 @@
     padding: 30px;
     color: rgb(77, 77, 77);
     font-family: "Open Sans", cursive;
+    position: relative;
+    left: 50px;
+    opacity: 0;
+}
+
+.quotes-poem.active {
+    animation: gerak-kiri ease 2s normal forwards;
+}
+
+@keyframes gerak-kiri {
+    0% {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50px);
+        opacity: 1;
+    }
 }
 
 .quotes-poemDots {
