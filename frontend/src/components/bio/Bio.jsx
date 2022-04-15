@@ -12,7 +12,7 @@ const Bio = () => {
         {/*ini bio list */}
         <div className='bio-list'>
 
-          <div className='bio-triangleHeader'>asdasd</div>
+          <div className='bio-triangleHeader'></div>
           {couple.map((item) => (
             <BioCard 
               key={item.id} 
@@ -26,7 +26,7 @@ const Bio = () => {
             />
           ))}
           {/* Footer Triangle */}
-          <div className='bio-triangleFooter'>asdasd</div>
+          <div className='bio-triangleFooter'></div>
         </div>    
 
     </div>

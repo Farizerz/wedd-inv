@@ -52,10 +52,10 @@
 }
 
 .bioCard-contents.active {
-    animation: slide-left 1s ease normal forwards;
+    animation: slide-lefts 1s ease normal forwards;
 }
 
-@keyframes slide-left {
+@keyframes slide-lefts {
     0% {
         margin-left: 150px;
         opacity: 0;
