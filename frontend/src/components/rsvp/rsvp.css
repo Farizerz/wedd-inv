@@ -1,6 +1,7 @@
 .rsvp {
     height: auto;
     display: flex;
+    overflow: hidden;
 }
 
 .rsvp-bg {

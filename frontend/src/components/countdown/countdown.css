@@ -1,6 +1,7 @@
 .countdown {
     height: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 .countdown-bg {

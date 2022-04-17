@@ -1,0 +1,110 @@
+.modalIntro {
+    height: 100%;
+    display: flex;
+}
+
+.modalIntro-bg {
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+    position: fixed;
+    bottom: 100vh;
+    animation: slide-down 1s ease normal forwards;
+    overflow: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.modalIntro-bg-overlay {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
+    opacity: 0.5;
+    top: 0;
+}
+
+.modalIntro-img {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    object-fit: cover;
+    top:0;
+}
+
+.modalIntro-title {
+    position: absolute;
+    top: 380px;
+    text-align: center;
+    color: beige;
+    font-family: "Nirmala UI";
+    font-size: 35px;
+}
+
+.modalIntro-subtitle {
+    position: absolute;
+    top: 430px;
+    text-align: center;
+    color: beige;
+    font-family: "Nirmala UI";
+    font-size: 20px;
+}
+
+.modalIntro-name {
+    position: absolute;
+    top: 460px;
+    text-align: center;
+    color: beige;
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+}
+
+.modalIntro-btn {
+    position: absolute;
+    width: 60%;
+    height: 40px;
+    border: 0;
+    background-color: white;
+    border-radius: 3px;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    top: 580px;
+}
+
+@keyframes slide-down {
+    0% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0vh;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-atass{
+    0% {
+        bottom: 0vh;
+        opacity: 1;
+    }   
+    100% {
+        bottom: 100vh;
+        opacity: 1;
+    } 
+}
+
+body.noscroll
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
+
