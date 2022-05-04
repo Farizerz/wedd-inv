@@ -1,6 +1,7 @@
 .rsvp {
     height: auto;
     display: flex;
+    overflow: hidden;
 }
 
 .rsvp-bg {
@@ -16,6 +17,12 @@
     width: 40%;
     justify-content: center;
     position: relative;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.rsvp-titleContainer.active {
+    animation: zoom 1s ease normal forwards;
 }
 
 
@@ -42,7 +49,14 @@
     width: 74%;
     position: relative;
     margin-top: 30px;
+    transform: scale(0.5);
+    opacity: 0;
 }
+
+.rsvp-formContainer.active {
+    animation: zoom 1s ease normal forwards;
+}
+
 
 .rsvp-input {
     width: 100%;
@@ -88,7 +102,14 @@
     margin-top: 50px;
     width: 40%;
     z-index: -2;
+    transform: scale(0.5);
+    opacity: 0;
 }
+
+.rsvp-donations.active {
+    animation: zoom 1s ease normal forwards;
+}
+
 
 .rsvp-icon {
     font-size: 35px;

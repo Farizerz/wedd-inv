@@ -1,8 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react'
 import photo from '../../img/photo1.png'
 import './countdown.css'
+import AnimateOnScroll from '../../utils/AnimateOnScroll'
 
 const Countdown = () => {
+
+    window.addEventListener('scroll', AnimateOnScroll);
+
     const [days, setDays] = useState('00');
     const [hours, setHours] = useState('00');
     const [minutes, setMinutes] = useState('00');
@@ -52,11 +56,11 @@ const Countdown = () => {
     <div className='countdown'>
         { /* Background */ }
         <div className='countdown-bg'>
-            <img className='countdown-img' src={photo} />
+            <img className='countdown-img reveal' src={photo} />
         </div>
 
         { /* Container putih */ }
-        <div className='countdown-container'>
+        <div className='countdown-container reveal'>
 
             { /* Judul */ }
             <h1 className='countdown-title'>Counting down to the big day</h1>

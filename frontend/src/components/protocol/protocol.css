@@ -1,6 +1,7 @@
 .protocol {
     height: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 .protocol-bg {
@@ -19,7 +20,12 @@
     font-family: 'Noto Serif Display', serif;
     font-weight: bold;
     color: whitesmoke;
+    transform: scale(0.5);
+    opacity: 0;
+}
 
+.protocol-title.active {
+    animation: zoom 1s ease normal forwards;
 }
 
 .protocol-container {
@@ -46,6 +52,12 @@
     width: 65%;
     height: auto;
     pointer-events: none;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.protocol-img.active {
+    animation: zoom 1s ease normal forwards;
 }
 
 .protocol-details {
@@ -53,6 +65,12 @@
     font-family: 'Montserrat', sans-serif;
     color: rgb(100, 100, 100);
     line-height: 25px;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.protocol-details.active {
+    animation: zoom 1s ease normal forwards;
 }
 
 @media screen and (max-width: 980px) {

@@ -52,10 +52,10 @@
 }
 
 .bioCard-contents.active {
-    animation: slide-left 1s ease normal forwards;
+    animation: slide-lefts 1s ease normal forwards;
 }
 
-@keyframes slide-left {
+@keyframes slide-lefts {
     0% {
         margin-left: 150px;
         opacity: 0;
@@ -70,6 +70,7 @@
     width: 60%;
     height: auto;
     pointer-events: none;
+    overflow: hidden;
 }
 
 .bioCard-name {
@@ -77,18 +78,21 @@
     font-family: 'Noto Serif Display', serif;
     font-weight: bold;
     color: rgb(165, 142, 107);
+    overflow: hidden;
 }
 
 .bioCard-childOf {
     font-size: 18px;
     font-weight: bold;
     color: rgb(100, 100, 100);
+    overflow: hidden;
 }
 
 .bioCard-parents {
     font-size: 17px;
     color: rgb(100, 100, 100);
     font-weight: 600;
+    overflow: hidden;
 }
 
 .bioCard-button {
@@ -103,6 +107,8 @@
     font-size: 20px;
     font-weight: bold;
     padding: 5px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 1280px) {

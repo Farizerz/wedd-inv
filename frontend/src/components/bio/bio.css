@@ -1,6 +1,7 @@
 .bio {
     height: auto;
     display: flex;
+    overflow: hidden;
 }
 
 .bio-list {
