@@ -29,7 +29,6 @@ function App() {
   
   return (
     <div>
-      <div id='preloader'></div>
       <Intro />
       <Quotes />
       <Bio />
