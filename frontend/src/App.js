@@ -30,7 +30,6 @@ function App() {
   return (
     <div>
       <div id='preloader'></div>
-      <ModalIntro />
       <Intro />
       <Quotes />
       <Bio />
