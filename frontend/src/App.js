@@ -29,6 +29,7 @@ function App() {
   
   return (
     <div>
+      <ModalIntro />
       <Intro />
       <Quotes />
       <Bio />

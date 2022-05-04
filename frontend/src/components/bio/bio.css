@@ -10,6 +10,7 @@
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .bio-triangleHeader{
