@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/wedd-inv/static/css/main.b7eed441.css",
+    "main.js": "/wedd-inv/static/js/main.cf874dc0.js",
+    "static/media/slideshow3.png": "/wedd-inv/static/media/slideshow3.0a5b99960e39cff4262b.png",
+    "static/media/2.png": "/wedd-inv/static/media/2.0cc23099065e1d622ad3.png",
+    "static/media/1.png": "/wedd-inv/static/media/1.101941d394bb7bcf3b6c.png",
+    "static/media/slideshow1.png": "/wedd-inv/static/media/slideshow1.97a05968b131b7c07ef6.png",
+    "static/media/photo1.png": "/wedd-inv/static/media/photo1.d0809a99a19f0911d311.png",
+    "static/media/slideshow2.png": "/wedd-inv/static/media/slideshow2.e32c362c4f6d89eb96c5.png",
+    "static/media/PP1-254.png": "/wedd-inv/static/media/PP1-254.64edae5f47a5e18da6e3.png",
+    "static/media/PP2-350.png": "/wedd-inv/static/media/PP2-350.b79cab321bcd05d3b14e.png",
+    "static/media/dnny&ajng.jpg": "/wedd-inv/static/media/dnny&ajng.34549939f15a18ec5f58.jpg",
+    "static/media/greyscale.JPG": "/wedd-inv/static/media/greyscale.f2673299136e6d0ea2ef.JPG",
+    "static/media/loader.gif": "/wedd-inv/static/media/loader.f49ad9e30ea29132f5e4.gif",
+    "static/media/flower-bouquet.png": "/wedd-inv/static/media/flower-bouquet.88f9c135968183a7f50f.png",
+    "static/media/heart.png": "/wedd-inv/static/media/heart.1d7228ee73452285641c.png",
+    "index.html": "/wedd-inv/index.html",
+    "main.b7eed441.css.map": "/wedd-inv/static/css/main.b7eed441.css.map",
+    "main.cf874dc0.js.map": "/wedd-inv/static/js/main.cf874dc0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7eed441.css",
+    "static/js/main.cf874dc0.js"
+  ]
+}
